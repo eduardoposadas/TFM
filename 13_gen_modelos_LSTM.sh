@@ -1,15 +1,6 @@
 #!/bin/bash
 . 00_funciones.sh
 
-# echo Genera fichero CSV con festivos en Madrid
-# ./Calendario_laboral.py
-# 
-# echo Genera fichero CSV con las precipitaciones registradas en Madrid-Retiro
-# cd Precipitaciones
-# ./descarga_datos_precipitaciones.sh
-# cp precipitaciones.csv ..
-# cd ..
-
 #Procesos simultaneos de generacion de modelos
 MAX_CONCURRENTES=4
 ESPERA=5
