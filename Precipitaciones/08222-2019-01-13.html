@@ -1,0 +1,522 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>Partes synops decodificados</TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="Author" content="G. Ballester Valor">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="synop, synop ship, temperatura, punto de rocio, sensacion termica, indice de calor, humedad relativa, precipitacion, viento, tiempo significativo, temperatura maxima, temperatura minima, mensajes synop">
+<link rel="stylesheet" href="/ogimet.css">
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#eb6c44",
+      "text": "#ffffff"
+    },
+    "button": {
+      "background": "#f5d948"
+    }
+  },
+  "theme": "classic",
+  "position": "top",
+  "content": {
+    "message": "Las cookies de este sitio web se usan para personalizar el contenido y los anuncios, ofrecer funciones de redes sociales y analizar el tráfico. Ademas, compartimos el uso que haga del sitio web con nuestros partners de redes sociales, publicidad y análisis web, quienes pueden combinarla con otra información que les haya proporcionado o que hayan recopilado a partir del uso que haya hecho de sus servicios. Si continua navegando en estas páginas consideramos que acepta su uso. ",
+    "dismiss": "Entendido",
+    "link": "Saber más",
+    "href": "/cookiespolicy.phtml"
+  }
+})});
+</script>
+</HEAD>
+<BODY bgcolor="FFFFDD">
+<div id="overDiv" style="position:absolute; visibility:hidden; z-index:1000;"></div>
+<script type="text/javascript" src="../overlib/overlib.js"><!-- overLIB (c) Erik Bosrup --></script>
+<!-- Comienza el armazon del prologo -->
+<!--<div id="overlay_cookie">
+     <center><table width="80%"><tr><td>Este sitio utiliza cookies de anunciantes. Si continua navegando en estas páginas consideramos que acepta su uso.</td>
+     <td align="center"><a href="/cookiespolicy.phtml">Saber más</a></td>
+     <td align="left"><button id="button_cookie" onclick="msgOff()">Entendido</button>
+     </td></tr></table>
+</center>
+</div> -->
+<table width="100%" border=1 cellspacing="0" cellpadding="5" summary="skeleton of Ogimet pages">
+ <TR>
+  <TD class="zona_izquierda" align="center" bgcolor="#DDDDBB">
+   <DIV><font color="#203090">Informaci&#243;n profesional de las condiciones meteorol&#243;gicas en todo el mundo</font></DIV>
+  </TD>
+  <TD class="zona_centro" align="center" bgcolor="#FFFFDD">
+   <img src="/img/ogimet.jpg" alt="OGIMET" style="max-width: 100%">
+   <!--h1><font color="#A03030">OGIMET</font></h1-->
+<div width="100%">
+     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+     <!-- Superior móviles -->
+     <ins class="adsbygoogle adslot_1"
+       data-ad-client="ca-pub-8560276470047907"
+       data-ad-slot="6634681731"
+       data-ad-format="horizontal"></ins>
+     <script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+     </script>
+</div>
+  </TD>
+  <!-- barra de publicidad -->
+  <TD class="zona_derecha" align="center" valign="top" rowspan="2" bgcolor="#FFFFEE" >
+<!-- adsense google -->
+     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Derecha adaptable 1 -->
+<ins class="adsbygoogle adslot_2"
+     data-ad-client="ca-pub-8560276470047907"
+     data-ad-slot="6597655730"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<hr size="1">
+<!-- Derecha adaptable 2 -->
+     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle adslot_2"
+     data-ad-client="ca-pub-8560276470047907"
+     data-ad-slot="4562519331"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+  </TD>
+</TR>
+<TR>
+<!--barra izquierda-->
+<TD align="center" valign="top" bgcolor="#FFFFDD">
+<h2><FONT color="#F05050"><A href="/index.phtml">OGIMET</a></FONT></h2>
+<h5><FONT color="#F05050"><A href="/index.phtml.en">English version</A></FONT></h5>
+<hr size="1">
+
+<div><FONT color="#30A050" size="-1"><STRONG>METEOSAT</STRONG></FONT></div>
+<div><a href="/cgi-bin/gmsat2"><IMG src="/mapabase/geos/bluem/latest-mpe_ir_s.jpg" 
+alt="&#218;ltimos meteosat / metar" title="&#218;ltimos meteosat / metar" border="0"
+style="max-width: 100%">
+<br><b>M</b>eteosat-9/metar</a></div>
+<div><A href="/loopir2d2.phtml"><b>B</b>ucle meteosat-9 VIS-IR</A></div>
+<hr size="1">
+
+<div><FONT color="#30A050" size="-1"><STRONG>MODELOS NUM&#201;RICOS</STRONG></FONT></div>
+<div><A href="/tabla_pred.phtml"><IMG src="/tmp/gfsmodel.gif" alt="Mapas modelo GFS" border="0" style="max-width: 100%"><br><b>G</b>FS 7 d&#237;as
+</A></div>
+<hr size="1">
+
+<div><FONT color="#30A050" size="-1"><STRONG>METEOGRAMAS</STRONG></FONT></div>
+<div><A href="/gramet_aero.phtml"><b>G</b>ramet <b>a</b>ero</A></div>
+<div><A href="/gramet_meteo.phtml"><b>G</b>ramet <b>m</b>eteo</A></div>
+<hr size="1">
+
+
+<div><FONT color="#30A050" size="-1"><STRONG>INDICATIVOS</STRONG></FONT></div>
+<div><A href="/indicativos.phtml"><b>C</b>onsulta indicativos</A></div>
+<hr size="1">
+
+<div><FONT color="#30A050" size="-1"><STRONG>PARTES SIN DECODIFICAR</STRONG></FONT></div>
+<div><A href="/synops.phtml"><b>S</b>ynops</A></div>
+<div><A href="/synopsc.phtml"><b>S</b>ynops por territorios</A></div>
+<div><A href="/usynops.phtml"><b>&#218;</b>ltimos Synops</A></div>
+<div><A href="/metars.phtml"><b>M</b>etar/Taf</A></div>
+<div><A href="/umetars.phtml"><b>&#218;</b>ltimos Metar</A></div>
+<div><A href="/utafs.phtml"><b>&#218;</b>ltimos Taf</A></div>
+<div><A href="/sond.phtml"><b>S</b>ondeos</A></div>
+<div><A href="/sondc.phtml"><b>S</b>ondeos por territorios</A></div>
+<hr size="1">
+
+<div><FONT color="#30A050" size="-1"><STRONG>INFORMACI&#211;N TEXTO</STRONG></FONT></div>
+<div><A href="/gsynres.phtml"><b>R</b>esumen diario</A></div>
+<div><A href="/resynops.phtml"><b>R</b>esumen territorio</A></div>
+<div><A href="/ranking.phtml"><b>R</b>anking meteorol&#243;gico</A></div>
+<div><A href="/gsodc.phtml"><b>R</b>esumen diario GSOD</A></div>
+<div><A href="/gclimat.phtml"><b>R</b>esumen CLIMAT</A></div>
+<hr size="1">
+
+<div><FONT color="#30A050" size="-1"><STRONG>BUFR</STRONG></FONT></div>
+<div><A href="/bufr.phtml"><b>D</b>escarga <b>B</b>ufr</A></div>
+<hr size="1">
+
+<div><FONT color="#30A050" size="-1"><STRONG>INFORMACI&#211;N GR&#193;FICA</STRONG></FONT></div>
+<div><A href="/cgi-bin/ogimet_nav"><b>N</b>avegación openmaps</A></div>
+<div><A href="/gsynop.phtml"><b>S</b>ynops por territorios</A></div>
+<div><A href="/gsynop_nav.phtml"><b>N</b>avegaci&#243;n synop</A></div>
+<div><A href="/gmetar.phtml"><b>M</b>etar por territorios</A></div>
+<div><A href="/gmetar_nav.phtml"><b>N</b>avegaci&#243;n metar</A></div>
+<div><A href="/gsod_nav.phtml"><b>N</b>avegaci&#243;n datos GSOD</A></div>
+<hr size="1">
+<div><FONT color="#30A050" size="-1"><STRONG>VARIOS</STRONG></FONT></div>
+<div><A href="/cgi-bin/count_reports"><b>B</b>ase de datos</A></div>
+<div><A href="/creditos.phtml"><b>C</b>r&#233;ditos</A></div>
+<div><A href="/licencia.phtml"><b>L</b>icencia</A></div>
+<div><A href="/novedades.phtml"><b>N</b>ovedades Ogimet</A></div>
+<div><A href="http://www.nws.noaa.gov/im/wmocovr.htm"><b>R</b>esoluci&#243;n 40 de la OMM</A></div>
+<div><A href="/guia.phtml"><b>D</b>ocumentaci&#243;n</A></div>
+<div><A href="mailto:webmasterREM0VE@ogimet.com"><b>C</b>ontacto</A></div>
+<hr size="1">
+<b>Publicidad</b>
+<hr size="1">
+<div><a href="http://www.tiempo.com" title="Servidor dedicado ofrecido por tiempo.com">
+<img src="/img/tiempo.svg" border="0" alt="www.tiempo.com" style="max-width: 100%" ></a></div>
+<!-- fin de barra izquierda -->
+</TD>
+<TD valign="top">
+<!--nucleo, fin del prologo -->
+<TABLE border=2 align="center">
+<TR><TD align="center" bgcolor="#FFC0C0">
+<h3><FONT color="#C05050">08222</font>:&nbsp;&nbsp; Madrid (Spain)</h3>
+<h4>Latitud: <FONT color="#505090">40-25N</FONT> &nbsp;&nbsp; Longitud: <FONT color="#505090">003-41W</FONT> &nbsp;&nbsp; Altitud: <FONT color="#50A050">655</FONT> m.</h4>
+</TD></TR>
+</TABLE>
+<TABLE align="center" border=0 cellspacing=1 bgcolor='#d0d0d0' >
+<CAPTION> Synop decodificados. (23:45 tiempo solar medio)<br>Periodo: <b>1</b> d&#237;as desde <b>2019/01/13</b> a las <font color="#030509"><b>00:00 UTC</b></font>.</CAPTION>
+<THEAD>
+<TR>
+ <th colspan='2' bgcolor='#5ac05a'>Fecha</th>
+ <th bgcolor='#a3c35a'>T<br>(C)</th>
+ <th bgcolor='#c0a35a'>Td<br>(C)</th>
+ <th bgcolor='#a3c35a'>Tmax<br>(C)</th>
+ <th bgcolor='#a3c35a'>Tmin<br>(C)</th>
+ <th bgcolor='#c05a5a'>ddd</th>
+ <th bgcolor='#c05a5a'>ff<br>kmh</th>
+ <th bgcolor='#c05a5a'>Rach<br>kmh</th>
+ <th bgcolor='#c0a35a'>P0<br>hPa</th>
+ <th bgcolor='#c0a35a'>P mar<br>hPa</th>
+ <th bgcolor='#c0a35a'>P<br>Tnd</th>
+ <th bgcolor='#C0C05a'>Prec<br>(mm)</th>
+<tr>
+<td bgcolor="#a0c0a0"><a HREF="/cgi-bin/decomet?ind=08222&ano=2019&mes=01&day=13&hora=00&min=00&single=yes" onmouseover="return overlib('Descripcion detallada y completa de decodificacion synop');" onmouseout=" return nd();">13/01/2019</a></TD>
+<td bgcolor="#a0c0a0"><a HREF="/cgi-bin/decomet?ind=08222&ano=2019&mes=01&day=13&hora=00&min=00&single=yes" onmouseover="return overlib('Descripcion detallada y completa de decodificacion synop');" onmouseout=" return nd();">00:00</a></TD>
+<TD align="right"  bgcolor="#0AFFBE"><font color="#000000">3.2</font></TD>
+<TD align="right"  bgcolor="#00FFFF"><font color="#000000">-1.4</font></TD>
+<TD align="right" bgcolor="#DDDDDD">-----</TD>
+<TD align="right" bgcolor="#DDDDDD">-----</TD>
+<TD align="center"  bgcolor="#a0a0c0"><font color="#000000">NE</font></TD>
+<TD align="right"  bgcolor="#D5FF3C"><font color="#000000">3.6</font></TD>
+<TD align="right"  bgcolor="#A0FF47"><font color="#000000">10.8</font></TD>
+<TD align="right"  bgcolor="#a0c0c0"><font color="#000000">949.4</font></TD>
+<TD align="right"  bgcolor="#00FFFF"><font color="#000000">1030.2</font></TD>
+<TD align="right"  bgcolor="#C0D8FF"><font color="#000000">+0.2</font></TD>
+<TD align="center" bgcolor="#FF8835"><font color="#000000">0.0/6h</font></TD>
+</tr>
+<tr>
+<td bgcolor="#a0c0a0"><a HREF="/cgi-bin/decomet?ind=08222&ano=2019&mes=01&day=12&hora=23&min=00&single=yes" onmouseover="return overlib('Descripcion detallada y completa de decodificacion synop');" onmouseout=" return nd();">12/01/2019</a></TD>
+<td bgcolor="#a0c0a0"><a HREF="/cgi-bin/decomet?ind=08222&ano=2019&mes=01&day=12&hora=23&min=00&single=yes" onmouseover="return overlib('Descripcion detallada y completa de decodificacion synop');" onmouseout=" return nd();">23:00</a></TD>
+<TD align="right"  bgcolor="#0AFFBE"><font color="#000000">2.7</font></TD>
+<TD align="right"  bgcolor="#00FFFF"><font color="#000000">-2.0</font></TD>
+<TD align="right" bgcolor="#DDDDDD">-----</TD>
+<TD align="right" bgcolor="#DDDDDD">-----</TD>
+<TD align="center"  bgcolor="#a0a0c0"><font color="#000000">CAL</font></TD>
+<TD align="right"  bgcolor="#FF8835"><font color="#000000">0.0</font></TD>
+<TD align="right"  bgcolor="#D5FF3C"><font color="#000000">3.6</font></TD>
+<TD align="right"  bgcolor="#a0c0c0"><font color="#000000">949.6</font></TD>
+<TD align="right"  bgcolor="#00FFFF"><font color="#000000">1030.5</font></TD>
+<TD align="right"  bgcolor="#C0D8FF"><font color="#000000">+0.3</font></TD>
+<TD align="center" bgcolor="#FF8835"><font color="#000000">0.0/1h</font></TD>
+</tr>
+<tr>
+<td bgcolor="#a0c0a0"><a HREF="/cgi-bin/decomet?ind=08222&ano=2019&mes=01&day=12&hora=22&min=00&single=yes" onmouseover="return overlib('Descripcion detallada y completa de decodificacion synop');" onmouseout=" return nd();">12/01/2019</a></TD>
+<td bgcolor="#a0c0a0"><a HREF="/cgi-bin/decomet?ind=08222&ano=2019&mes=01&day=12&hora=22&min=00&single=yes" onmouseover="return overlib('Descripcion detallada y completa de decodificacion synop');" onmouseout=" return nd();">22:00</a></TD>
+<TD align="right"  bgcolor="#37FF8E"><font color="#000000">4.0</font></TD>
+<TD align="right"  bgcolor="#00FFFF"><font color="#000000">-1.4</font></TD>
+<TD align="right" bgcolor="#DDDDDD">-----</TD>
+<TD align="right" bgcolor="#DDDDDD">-----</TD>
+<TD align="center"  bgcolor="#a0a0c0"><font color="#000000">SE</font></TD>
+<TD align="right"  bgcolor="#FF8835"><font color="#000000">0.0</font></TD>
+<TD align="right"  bgcolor="#D5FF3C"><font color="#000000">3.6</font></TD>
+<TD align="right"  bgcolor="#a0c0c0"><font color="#000000">949.6</font></TD>
+<TD align="right"  bgcolor="#0AFFBE"><font color="#000000">1030.1</font></TD>
+<TD align="right"  bgcolor="#C0D8FF"><font color="#000000">+0.4</font></TD>
+<TD align="center" bgcolor="#FF8835"><font color="#000000">0.0/1h</font></TD>
+</tr>
+<tr>
+<td bgcolor="#a0c0a0"><a HREF="/cgi-bin/decomet?ind=08222&ano=2019&mes=01&day=12&hora=20&min=00&single=yes" onmouseover="return overlib('Descripcion detallada y completa de decodificacion synop');" onmouseout=" return nd();">12/01/2019</a></TD>
+<td bgcolor="#a0c0a0"><a HREF="/cgi-bin/decomet?ind=08222&ano=2019&mes=01&day=12&hora=20&min=00&single=yes" onmouseover="return overlib('Descripcion detallada y completa de decodificacion synop');" onmouseout=" return nd();">20:00</a></TD>
+<TD align="right"  bgcolor="#37FF8E"><font color="#000000">4.6</font></TD>
+<TD align="right"  bgcolor="#00FFFF"><font color="#000000">-2.0</font></TD>
+<TD align="right" bgcolor="#DDDDDD">-----</TD>
+<TD align="right" bgcolor="#DDDDDD">-----</TD>
+<TD align="center"  bgcolor="#a0a0c0"><font color="#000000">NNW</font></TD>
+<TD align="right"  bgcolor="#A0FF47"><font color="#000000">7.2</font></TD>
+<TD align="right"  bgcolor="#A0FF47"><font color="#000000">14.4</font></TD>
+<TD align="right"  bgcolor="#a0c0c0"><font color="#000000">949.3</font></TD>
+<TD align="right"  bgcolor="#0AFFBE"><font color="#000000">1029.6</font></TD>
+<TD align="right"  bgcolor="#C0D8FF"><font color="#000000">+0.8</font></TD>
+<TD align="center" bgcolor="#FF8835"><font color="#000000">0.0/1h</font></TD>
+</tr>
+<tr>
+<td bgcolor="#a0c0a0"><a HREF="/cgi-bin/decomet?ind=08222&ano=2019&mes=01&day=12&hora=19&min=00&single=yes" onmouseover="return overlib('Descripcion detallada y completa de decodificacion synop');" onmouseout=" return nd();">12/01/2019</a></TD>
+<td bgcolor="#a0c0a0"><a HREF="/cgi-bin/decomet?ind=08222&ano=2019&mes=01&day=12&hora=19&min=00&single=yes" onmouseover="return overlib('Descripcion detallada y completa de decodificacion synop');" onmouseout=" return nd();">19:00</a></TD>
+<TD align="right"  bgcolor="#37FF8E"><font color="#000000">5.5</font></TD>
+<TD align="right"  bgcolor="#00FFFF"><font color="#000000">-2.0</font></TD>
+<TD align="right" bgcolor="#DDDDDD">-----</TD>
+<TD align="right" bgcolor="#DDDDDD">-----</TD>
+<TD align="center"  bgcolor="#a0a0c0"><font color="#000000">NNW</font></TD>
+<TD align="right"  bgcolor="#A0FF47"><font color="#000000">7.2</font></TD>
+<TD align="right"  bgcolor="#A0FF47"><font color="#000000">14.4</font></TD>
+<TD align="right"  bgcolor="#a0c0c0"><font color="#000000">949.2</font></TD>
+<TD align="right"  bgcolor="#0AFFBE"><font color="#000000">1029.3</font></TD>
+<TD align="right"  bgcolor="#C0D8FF"><font color="#000000">+0.9</font></TD>
+<TD align="center" bgcolor="#FF8835"><font color="#000000">0.0/1h</font></TD>
+</tr>
+<tr>
+<td bgcolor="#a0c0a0"><a HREF="/cgi-bin/decomet?ind=08222&ano=2019&mes=01&day=12&hora=18&min=00&single=yes" onmouseover="return overlib('Descripcion detallada y completa de decodificacion synop');" onmouseout=" return nd();">12/01/2019</a></TD>
+<td bgcolor="#a0c0a0"><a HREF="/cgi-bin/decomet?ind=08222&ano=2019&mes=01&day=12&hora=18&min=00&single=yes" onmouseover="return overlib('Descripcion detallada y completa de decodificacion synop');" onmouseout=" return nd();">18:00</a></TD>
+<TD align="right"  bgcolor="#37FF8E"><font color="#000000">5.8</font></TD>
+<TD align="right"  bgcolor="#00FFFF"><font color="#000000">-2.0</font></TD>
+<TD align="right" bgcolor="#69FF60"><font color="#000000">9.4</font></TD>
+<TD align="right" bgcolor="#DDDDDD">-----</TD>
+<TD align="center"  bgcolor="#a0a0c0"><font color="#000000">NW</font></TD>
+<TD align="right"  bgcolor="#D5FF3C"><font color="#000000">3.6</font></TD>
+<TD align="right"  bgcolor="#A0FF47"><font color="#000000">10.8</font></TD>
+<TD align="right"  bgcolor="#a0c0c0"><font color="#000000">948.9</font></TD>
+<TD align="right"  bgcolor="#0AFFBE"><font color="#000000">1028.8</font></TD>
+<TD align="right"  bgcolor="#C0D8FF"><font color="#000000">+0.7</font></TD>
+<TD align="center" bgcolor="#FF8835"><font color="#000000">0.0/12h</font></TD>
+</tr>
+<tr>
+<td bgcolor="#a0c0a0"><a HREF="/cgi-bin/decomet?ind=08222&ano=2019&mes=01&day=12&hora=17&min=00&single=yes" onmouseover="return overlib('Descripcion detallada y completa de decodificacion synop');" onmouseout=" return nd();">12/01/2019</a></TD>
+<td bgcolor="#a0c0a0"><a HREF="/cgi-bin/decomet?ind=08222&ano=2019&mes=01&day=12&hora=17&min=00&single=yes" onmouseover="return overlib('Descripcion detallada y completa de decodificacion synop');" onmouseout=" return nd();">17:00</a></TD>
+<TD align="right"  bgcolor="#69FF60"><font color="#000000">7.8</font></TD>
+<TD align="right"  bgcolor="#00FFFF"><font color="#000000">-1.4</font></TD>
+<TD align="right" bgcolor="#DDDDDD">-----</TD>
+<TD align="right" bgcolor="#DDDDDD">-----</TD>
+<TD align="center"  bgcolor="#a0a0c0"><font color="#000000">WNW</font></TD>
+<TD align="right"  bgcolor="#D5FF3C"><font color="#000000">3.6</font></TD>
+<TD align="right"  bgcolor="#A0FF47"><font color="#000000">10.8</font></TD>
+<TD align="right"  bgcolor="#a0c0c0"><font color="#000000">948.5</font></TD>
+<TD align="right"  bgcolor="#0AFFBE"><font color="#000000">1027.8</font></TD>
+<TD align="right"  bgcolor="#FFBBBB"><font color="#000000">-0.0</font></TD>
+<TD align="center" bgcolor="#FF8835"><font color="#000000">0.0/1h</font></TD>
+</tr>
+<tr>
+<td bgcolor="#a0c0a0"><a HREF="/cgi-bin/decomet?ind=08222&ano=2019&mes=01&day=12&hora=16&min=00&single=yes" onmouseover="return overlib('Descripcion detallada y completa de decodificacion synop');" onmouseout=" return nd();">12/01/2019</a></TD>
+<td bgcolor="#a0c0a0"><a HREF="/cgi-bin/decomet?ind=08222&ano=2019&mes=01&day=12&hora=16&min=00&single=yes" onmouseover="return overlib('Descripcion detallada y completa de decodificacion synop');" onmouseout=" return nd();">16:00</a></TD>
+<TD align="right"  bgcolor="#69FF60"><font color="#000000">9.1</font></TD>
+<TD align="right"  bgcolor="#00FFFF"><font color="#000000">-1.0</font></TD>
+<TD align="right" bgcolor="#DDDDDD">-----</TD>
+<TD align="right" bgcolor="#DDDDDD">-----</TD>
+<TD align="center"  bgcolor="#a0a0c0"><font color="#000000">W</font></TD>
+<TD align="right"  bgcolor="#A0FF47"><font color="#000000">7.2</font></TD>
+<TD align="right"  bgcolor="#A0FF47"><font color="#000000">10.8</font></TD>
+<TD align="right"  bgcolor="#a0c0c0"><font color="#000000">948.3</font></TD>
+<TD align="right"  bgcolor="#0AFFBE"><font color="#000000">1027.2</font></TD>
+<TD align="right"  bgcolor="#FFBBBB"><font color="#000000">-0.6</font></TD>
+<TD align="center" bgcolor="#FF8835"><font color="#000000">0.0/1h</font></TD>
+</tr>
+<tr>
+<td bgcolor="#a0c0a0"><a HREF="/cgi-bin/decomet?ind=08222&ano=2019&mes=01&day=12&hora=14&min=00&single=yes" onmouseover="return overlib('Descripcion detallada y completa de decodificacion synop');" onmouseout=" return nd();">12/01/2019</a></TD>
+<td bgcolor="#a0c0a0"><a HREF="/cgi-bin/decomet?ind=08222&ano=2019&mes=01&day=12&hora=14&min=00&single=yes" onmouseover="return overlib('Descripcion detallada y completa de decodificacion synop');" onmouseout=" return nd();">14:00</a></TD>
+<TD align="right"  bgcolor="#69FF60"><font color="#000000">8.8</font></TD>
+<TD align="right"  bgcolor="#00FFFF"><font color="#000000">-0.5</font></TD>
+<TD align="right" bgcolor="#DDDDDD">-----</TD>
+<TD align="right" bgcolor="#DDDDDD">-----</TD>
+<TD align="center"  bgcolor="#a0a0c0"><font color="#000000">N</font></TD>
+<TD align="right"  bgcolor="#D5FF3C"><font color="#000000">3.6</font></TD>
+<TD align="right"  bgcolor="#A0FF47"><font color="#000000">10.8</font></TD>
+<TD align="right"  bgcolor="#a0c0c0"><font color="#000000">948.5</font></TD>
+<TD align="right"  bgcolor="#0AFFBE"><font color="#000000">1027.5</font></TD>
+<TD align="right"  bgcolor="#FF8585"><font color="#000000">-1.7</font></TD>
+<TD align="center" bgcolor="#FF8835"><font color="#000000">0.0/1h</font></TD>
+</tr>
+<tr>
+<td bgcolor="#a0c0a0"><a HREF="/cgi-bin/decomet?ind=08222&ano=2019&mes=01&day=12&hora=13&min=00&single=yes" onmouseover="return overlib('Descripcion detallada y completa de decodificacion synop');" onmouseout=" return nd();">12/01/2019</a></TD>
+<td bgcolor="#a0c0a0"><a HREF="/cgi-bin/decomet?ind=08222&ano=2019&mes=01&day=12&hora=13&min=00&single=yes" onmouseover="return overlib('Descripcion detallada y completa de decodificacion synop');" onmouseout=" return nd();">13:00</a></TD>
+<TD align="right"  bgcolor="#69FF60"><font color="#000000">7.6</font></TD>
+<TD align="right"  bgcolor="#00FFFF"><font color="#000000">-1.0</font></TD>
+<TD align="right" bgcolor="#DDDDDD">-----</TD>
+<TD align="right" bgcolor="#DDDDDD">-----</TD>
+<TD align="center"  bgcolor="#a0a0c0"><font color="#000000">SE</font></TD>
+<TD align="right"  bgcolor="#D5FF3C"><font color="#000000">3.6</font></TD>
+<TD align="right"  bgcolor="#A0FF47"><font color="#000000">10.8</font></TD>
+<TD align="right"  bgcolor="#a0c0c0"><font color="#000000">948.9</font></TD>
+<TD align="right"  bgcolor="#0AFFBE"><font color="#000000">1028.3</font></TD>
+<TD align="right"  bgcolor="#FF8585"><font color="#000000">-1.5</font></TD>
+<TD align="center" bgcolor="#FF8835"><font color="#000000">0.0/1h</font></TD>
+</tr>
+<tr>
+<td bgcolor="#a0c0a0"><a HREF="/cgi-bin/decomet?ind=08222&ano=2019&mes=01&day=12&hora=12&min=00&single=yes" onmouseover="return overlib('Descripcion detallada y completa de decodificacion synop');" onmouseout=" return nd();">12/01/2019</a></TD>
+<td bgcolor="#a0c0a0"><a HREF="/cgi-bin/decomet?ind=08222&ano=2019&mes=01&day=12&hora=12&min=00&single=yes" onmouseover="return overlib('Descripcion detallada y completa de decodificacion synop');" onmouseout=" return nd();">12:00</a></TD>
+<TD align="right"  bgcolor="#37FF8E"><font color="#000000">6.8</font></TD>
+<TD align="right"  bgcolor="#00FFFF"><font color="#000000">-0.7</font></TD>
+<TD align="right" bgcolor="#DDDDDD">-----</TD>
+<TD align="right" bgcolor="#DDDDDD">-----</TD>
+<TD align="center"  bgcolor="#a0a0c0"><font color="#000000">NE</font></TD>
+<TD align="right"  bgcolor="#D5FF3C"><font color="#000000">3.6</font></TD>
+<TD align="right"  bgcolor="#A0FF47"><font color="#000000">14.4</font></TD>
+<TD align="right"  bgcolor="#a0c0c0"><font color="#000000">949.4</font></TD>
+<TD align="right"  bgcolor="#0AFFBE"><font color="#000000">1029.1</font></TD>
+<TD align="right"  bgcolor="#FFBBBB"><font color="#000000">-0.5</font></TD>
+<TD align="center" bgcolor="#FF8835"><font color="#000000">0.0/6h</font></TD>
+</tr>
+<tr>
+<td bgcolor="#a0c0a0"><a HREF="/cgi-bin/decomet?ind=08222&ano=2019&mes=01&day=12&hora=11&min=00&single=yes" onmouseover="return overlib('Descripcion detallada y completa de decodificacion synop');" onmouseout=" return nd();">12/01/2019</a></TD>
+<td bgcolor="#a0c0a0"><a HREF="/cgi-bin/decomet?ind=08222&ano=2019&mes=01&day=12&hora=11&min=00&single=yes" onmouseover="return overlib('Descripcion detallada y completa de decodificacion synop');" onmouseout=" return nd();">11:00</a></TD>
+<TD align="right"  bgcolor="#37FF8E"><font color="#000000">5.4</font></TD>
+<TD align="right"  bgcolor="#00FFFF"><font color="#000000">-1.2</font></TD>
+<TD align="right" bgcolor="#DDDDDD">-----</TD>
+<TD align="right" bgcolor="#DDDDDD">-----</TD>
+<TD align="center"  bgcolor="#a0a0c0"><font color="#000000">ENE</font></TD>
+<TD align="right"  bgcolor="#D5FF3C"><font color="#000000">3.6</font></TD>
+<TD align="right"  bgcolor="#A0FF47"><font color="#000000">14.4</font></TD>
+<TD align="right"  bgcolor="#a0c0c0"><font color="#000000">950.2</font></TD>
+<TD align="right"  bgcolor="#00FFFF"><font color="#000000">1030.4</font></TD>
+<TD align="right"  bgcolor="#C0D8FF"><font color="#000000">+0.7</font></TD>
+<TD align="center" bgcolor="#FF8835"><font color="#000000">0.0/1h</font></TD>
+</tr>
+<tr>
+<td bgcolor="#a0c0a0"><a HREF="/cgi-bin/decomet?ind=08222&ano=2019&mes=01&day=12&hora=10&min=00&single=yes" onmouseover="return overlib('Descripcion detallada y completa de decodificacion synop');" onmouseout=" return nd();">12/01/2019</a></TD>
+<td bgcolor="#a0c0a0"><a HREF="/cgi-bin/decomet?ind=08222&ano=2019&mes=01&day=12&hora=10&min=00&single=yes" onmouseover="return overlib('Descripcion detallada y completa de decodificacion synop');" onmouseout=" return nd();">10:00</a></TD>
+<TD align="right"  bgcolor="#37FF8E"><font color="#000000">3.9</font></TD>
+<TD align="right"  bgcolor="#00FFFF"><font color="#000000">-1.4</font></TD>
+<TD align="right" bgcolor="#DDDDDD">-----</TD>
+<TD align="right" bgcolor="#DDDDDD">-----</TD>
+<TD align="center"  bgcolor="#a0a0c0"><font color="#000000">ENE</font></TD>
+<TD align="right"  bgcolor="#A0FF47"><font color="#000000">7.2</font></TD>
+<TD align="right"  bgcolor="#A0FF47"><font color="#000000">14.4</font></TD>
+<TD align="right"  bgcolor="#a0c0c0"><font color="#000000">950.4</font></TD>
+<TD align="right"  bgcolor="#00FFFF"><font color="#000000">1031.0</font></TD>
+<TD align="right"  bgcolor="#A5C8FF"><font color="#000000">+1.1</font></TD>
+<TD align="center" bgcolor="#FF8835"><font color="#000000">0.0/1h</font></TD>
+</tr>
+<tr>
+<td bgcolor="#a0c0a0"><a HREF="/cgi-bin/decomet?ind=08222&ano=2019&mes=01&day=12&hora=08&min=00&single=yes" onmouseover="return overlib('Descripcion detallada y completa de decodificacion synop');" onmouseout=" return nd();">12/01/2019</a></TD>
+<td bgcolor="#a0c0a0"><a HREF="/cgi-bin/decomet?ind=08222&ano=2019&mes=01&day=12&hora=08&min=00&single=yes" onmouseover="return overlib('Descripcion detallada y completa de decodificacion synop');" onmouseout=" return nd();">08:00</a></TD>
+<TD align="right"  bgcolor="#00FFFF"><font color="#000000">-0.6</font></TD>
+<TD align="right"  bgcolor="#1CFFFF"><font color="#000000">-3.9</font></TD>
+<TD align="right" bgcolor="#DDDDDD">-----</TD>
+<TD align="right" bgcolor="#DDDDDD">-----</TD>
+<TD align="center"  bgcolor="#a0a0c0"><font color="#000000">ENE</font></TD>
+<TD align="right"  bgcolor="#FF8835"><font color="#000000">0.0</font></TD>
+<TD align="right"  bgcolor="#D5FF3C"><font color="#000000">3.6</font></TD>
+<TD align="right"  bgcolor="#a0c0c0"><font color="#000000">949.5</font></TD>
+<TD align="right"  bgcolor="#00FFFF"><font color="#000000">1031.5</font></TD>
+<TD align="right"  bgcolor="#C0D8FF"><font color="#000000">+0.6</font></TD>
+<TD align="center" bgcolor="#FF8835"><font color="#000000">0.0/1h</font></TD>
+</tr>
+<tr>
+<td bgcolor="#a0c0a0"><a HREF="/cgi-bin/decomet?ind=08222&ano=2019&mes=01&day=12&hora=07&min=00&single=yes" onmouseover="return overlib('Descripcion detallada y completa de decodificacion synop');" onmouseout=" return nd();">12/01/2019</a></TD>
+<td bgcolor="#a0c0a0"><a HREF="/cgi-bin/decomet?ind=08222&ano=2019&mes=01&day=12&hora=07&min=00&single=yes" onmouseover="return overlib('Descripcion detallada y completa de decodificacion synop');" onmouseout=" return nd();">07:00</a></TD>
+<TD align="right"  bgcolor="#00FFFF"><font color="#000000">-0.5</font></TD>
+<TD align="right"  bgcolor="#1CFFFF"><font color="#000000">-4.5</font></TD>
+<TD align="right" bgcolor="#DDDDDD">-----</TD>
+<TD align="right" bgcolor="#DDDDDD">-----</TD>
+<TD align="center"  bgcolor="#a0a0c0"><font color="#000000">CAL</font></TD>
+<TD align="right"  bgcolor="#FF8835"><font color="#000000">0.0</font></TD>
+<TD align="right"  bgcolor="#D5FF3C"><font color="#000000">3.6</font></TD>
+<TD align="right"  bgcolor="#a0c0c0"><font color="#000000">949.3</font></TD>
+<TD align="right"  bgcolor="#00FFFF"><font color="#000000">1031.2</font></TD>
+<TD align="right"  bgcolor="#C0D8FF"><font color="#000000">+0.3</font></TD>
+<TD align="center" bgcolor="#FF8835"><font color="#000000">0.0/1h</font></TD>
+</tr>
+<tr>
+<td bgcolor="#a0c0a0"><a HREF="/cgi-bin/decomet?ind=08222&ano=2019&mes=01&day=12&hora=06&min=00&single=yes" onmouseover="return overlib('Descripcion detallada y completa de decodificacion synop');" onmouseout=" return nd();">12/01/2019</a></TD>
+<td bgcolor="#a0c0a0"><a HREF="/cgi-bin/decomet?ind=08222&ano=2019&mes=01&day=12&hora=06&min=00&single=yes" onmouseover="return overlib('Descripcion detallada y completa de decodificacion synop');" onmouseout=" return nd();">06:00</a></TD>
+<TD align="right"  bgcolor="#00FFFF"><font color="#000000">0.3</font></TD>
+<TD align="right"  bgcolor="#1CFFFF"><font color="#000000">-3.9</font></TD>
+<TD align="right" bgcolor="#37FF8E"><font color="#000000">4.5</font></TD>
+<TD align="right" bgcolor="#00FFFF"><font color="#000000">-0.5</font></TD>
+<TD align="center"  bgcolor="#a0a0c0"><font color="#000000">SE</font></TD>
+<TD align="right"  bgcolor="#FF8835"><font color="#000000">0.0</font></TD>
+<TD align="right"  bgcolor="#D5FF3C"><font color="#000000">3.6</font></TD>
+<TD align="right"  bgcolor="#a0c0c0"><font color="#000000">948.8</font></TD>
+<TD align="right"  bgcolor="#00FFFF"><font color="#000000">1030.4</font></TD>
+<TD align="right"  bgcolor="#FFBBBB"><font color="#000000">-0.3</font></TD>
+<TD align="center" bgcolor="#FF8835"><font color="#000000">0.0/24h<br>0.0/12h</font></TD>
+</tr>
+<tr>
+<td bgcolor="#a0c0a0"><a HREF="/cgi-bin/decomet?ind=08222&ano=2019&mes=01&day=12&hora=05&min=00&single=yes" onmouseover="return overlib('Descripcion detallada y completa de decodificacion synop');" onmouseout=" return nd();">12/01/2019</a></TD>
+<td bgcolor="#a0c0a0"><a HREF="/cgi-bin/decomet?ind=08222&ano=2019&mes=01&day=12&hora=05&min=00&single=yes" onmouseover="return overlib('Descripcion detallada y completa de decodificacion synop');" onmouseout=" return nd();">05:00</a></TD>
+<TD align="right"  bgcolor="#00FFFF"><font color="#000000">-0.1</font></TD>
+<TD align="right"  bgcolor="#1CFFFF"><font color="#000000">-4.5</font></TD>
+<TD align="right" bgcolor="#DDDDDD">-----</TD>
+<TD align="right" bgcolor="#DDDDDD">-----</TD>
+<TD align="center"  bgcolor="#a0a0c0"><font color="#000000">CAL</font></TD>
+<TD align="right"  bgcolor="#FF8835"><font color="#000000">0.0</font></TD>
+<TD align="right"  bgcolor="#D5FF3C"><font color="#000000">3.6</font></TD>
+<TD align="right"  bgcolor="#a0c0c0"><font color="#000000">948.9</font></TD>
+<TD align="right"  bgcolor="#00FFFF"><font color="#000000">1030.7</font></TD>
+<TD align="right"  bgcolor="#C0D8FF"><font color="#000000">+0.2</font></TD>
+<TD align="center" bgcolor="#FF8835"><font color="#000000">0.0/1h</font></TD>
+</tr>
+<tr>
+<td bgcolor="#a0c0a0"><a HREF="/cgi-bin/decomet?ind=08222&ano=2019&mes=01&day=12&hora=04&min=00&single=yes" onmouseover="return overlib('Descripcion detallada y completa de decodificacion synop');" onmouseout=" return nd();">12/01/2019</a></TD>
+<td bgcolor="#a0c0a0"><a HREF="/cgi-bin/decomet?ind=08222&ano=2019&mes=01&day=12&hora=04&min=00&single=yes" onmouseover="return overlib('Descripcion detallada y completa de decodificacion synop');" onmouseout=" return nd();">04:00</a></TD>
+<TD align="right"  bgcolor="#00FFFF"><font color="#000000">-0.3</font></TD>
+<TD align="right"  bgcolor="#1CFFFF"><font color="#000000">-5.1</font></TD>
+<TD align="right" bgcolor="#DDDDDD">-----</TD>
+<TD align="right" bgcolor="#DDDDDD">-----</TD>
+<TD align="center"  bgcolor="#a0a0c0"><font color="#000000">CAL</font></TD>
+<TD align="right"  bgcolor="#FF8835"><font color="#000000">0.0</font></TD>
+<TD align="right"  bgcolor="#A0FF47"><font color="#000000">7.2</font></TD>
+<TD align="right"  bgcolor="#a0c0c0"><font color="#000000">949.0</font></TD>
+<TD align="right"  bgcolor="#00FFFF"><font color="#000000">1030.8</font></TD>
+<TD align="right"  bgcolor="#C0D8FF"><font color="#000000">+0.6</font></TD>
+<TD align="center" bgcolor="#FF8835"><font color="#000000">0.0/1h</font></TD>
+</tr>
+<tr>
+<td bgcolor="#a0c0a0"><a HREF="/cgi-bin/decomet?ind=08222&ano=2019&mes=01&day=12&hora=02&min=00&single=yes" onmouseover="return overlib('Descripcion detallada y completa de decodificacion synop');" onmouseout=" return nd();">12/01/2019</a></TD>
+<td bgcolor="#a0c0a0"><a HREF="/cgi-bin/decomet?ind=08222&ano=2019&mes=01&day=12&hora=02&min=00&single=yes" onmouseover="return overlib('Descripcion detallada y completa de decodificacion synop');" onmouseout=" return nd();">02:00</a></TD>
+<TD align="right"  bgcolor="#00FFFF"><font color="#000000">0.6</font></TD>
+<TD align="right"  bgcolor="#1CFFFF"><font color="#000000">-4.8</font></TD>
+<TD align="right" bgcolor="#DDDDDD">-----</TD>
+<TD align="right" bgcolor="#DDDDDD">-----</TD>
+<TD align="center"  bgcolor="#a0a0c0"><font color="#000000">E</font></TD>
+<TD align="right"  bgcolor="#FF8835"><font color="#000000">0.0</font></TD>
+<TD align="right"  bgcolor="#A0FF47"><font color="#000000">7.2</font></TD>
+<TD align="right"  bgcolor="#a0c0c0"><font color="#000000">948.7</font></TD>
+<TD align="right"  bgcolor="#00FFFF"><font color="#000000">1030.2</font></TD>
+<TD align="right"  bgcolor="#C0D8FF"><font color="#000000">+0.3</font></TD>
+<TD align="center" bgcolor="#FF8835"><font color="#000000">0.0/1h</font></TD>
+</tr>
+<tr>
+<td bgcolor="#a0c0a0"><a HREF="/cgi-bin/decomet?ind=08222&ano=2019&mes=01&day=12&hora=01&min=00&single=yes" onmouseover="return overlib('Descripcion detallada y completa de decodificacion synop');" onmouseout=" return nd();">12/01/2019</a></TD>
+<td bgcolor="#a0c0a0"><a HREF="/cgi-bin/decomet?ind=08222&ano=2019&mes=01&day=12&hora=01&min=00&single=yes" onmouseover="return overlib('Descripcion detallada y completa de decodificacion synop');" onmouseout=" return nd();">01:00</a></TD>
+<TD align="right"  bgcolor="#0AFFBE"><font color="#000000">1.1</font></TD>
+<TD align="right"  bgcolor="#1CFFFF"><font color="#000000">-4.5</font></TD>
+<TD align="right" bgcolor="#DDDDDD">-----</TD>
+<TD align="right" bgcolor="#DDDDDD">-----</TD>
+<TD align="center"  bgcolor="#a0a0c0"><font color="#000000">ESE</font></TD>
+<TD align="right"  bgcolor="#FF8835"><font color="#000000">0.0</font></TD>
+<TD align="right"  bgcolor="#D5FF3C"><font color="#000000">3.6</font></TD>
+<TD align="right"  bgcolor="#a0c0c0"><font color="#000000">948.4</font></TD>
+<TD align="right"  bgcolor="#0AFFBE"><font color="#000000">1029.7</font></TD>
+<TD align="right"  bgcolor="#C0D8FF"><font color="#000000">+0.3</font></TD>
+<TD align="center" bgcolor="#FF8835"><font color="#000000">0.0/1h</font></TD>
+</tr>
+<tr>
+<td bgcolor="#a0c0a0"><a HREF="/cgi-bin/decomet?ind=08222&ano=2019&mes=01&day=12&hora=00&min=00&single=yes" onmouseover="return overlib('Descripcion detallada y completa de decodificacion synop');" onmouseout=" return nd();">12/01/2019</a></TD>
+<td bgcolor="#a0c0a0"><a HREF="/cgi-bin/decomet?ind=08222&ano=2019&mes=01&day=12&hora=00&min=00&single=yes" onmouseover="return overlib('Descripcion detallada y completa de decodificacion synop');" onmouseout=" return nd();">00:00</a></TD>
+<TD align="right"  bgcolor="#0AFFBE"><font color="#000000">1.9</font></TD>
+<TD align="right"  bgcolor="#1CFFFF"><font color="#000000">-4.8</font></TD>
+<TD align="right" bgcolor="#DDDDDD">-----</TD>
+<TD align="right" bgcolor="#DDDDDD">-----</TD>
+<TD align="center"  bgcolor="#a0a0c0"><font color="#000000">E</font></TD>
+<TD align="right"  bgcolor="#FF8835"><font color="#000000">0.0</font></TD>
+<TD align="right"  bgcolor="#D5FF3C"><font color="#000000">3.6</font></TD>
+<TD align="right"  bgcolor="#a0c0c0"><font color="#000000">948.4</font></TD>
+<TD align="right"  bgcolor="#0AFFBE"><font color="#000000">1029.5</font></TD>
+<TD align="right"  bgcolor="#C0D8FF"><font color="#000000">+0.3</font></TD>
+<TD align="center" bgcolor="#FF8835"><font color="#000000">0.0/6h</font></TD>
+</tr>
+</TABLE>
+<!--comienzo del epilogo-->
+</TD>
+</TR>
+<TR>
+<TD  align="center" colspan="3" bgcolor="#FFFFDD">
+<!-- barra inferior -->
+<DIV><font color="#FF6666">Estas p&#225;ginas deben utilizarse a t&#237;tulo informativo. Los autores no se responsabilizan de cualquier error, retraso o defecto en los datos o en su interpretaci&#243;n. Los productos de este sitio no deben utilizarse en ninguna misi&#243;n cr&#237;tica</font></DIV>
+<DIV><font color="#FF6666">Este sitio web no almacena ninguna informaci&#243;n personal de sus usuarios salvo el consetimiento de utilización de cookies. No obstante, utiliza los servicios de Google Adsense. Puede visitar <a href="https://policies.google.com/technologies/partner-sites">esta página de Google</a> para saber qué uso se le da a la información recogida por los anuncios de terceros</font></DIV>
+<DIV><FONT color="#902020">&#169; Copyright G. Ballester Valor  2005-2019</FONT></DIV>.
+<!-- fin de barra inferior -->
+  </TD>
+</TR>
+</table>
+<!-- fin del epilogo-->
+</BODY>
+</HTML>
