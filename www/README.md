@@ -5,5 +5,5 @@ _______________________
 El repositorio de la aplicacion web es:
 https://github.com/eduardoposadas/eduardoposadas.github.io
 
-Para ver funcionando la aplicion:
+Para ver funcionando la aplicion web:
 https://eduardoposadas.github.io/mapa.html
