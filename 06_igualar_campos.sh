@@ -70,7 +70,7 @@ do
     espera_max_concurrentes $MAX_CONCURRENTES $ESPERA
 done
 
-for FILE in $DIR_DATOS/208627-{53..74}-transporte-ptomedida-historico.zip/*.csv
+for FILE in $DIR_DATOS/208627-{53..75}-transporte-ptomedida-historico.zip/*.csv
 do
     igualar_campos_5 "${FILE}" &
     espera_max_concurrentes $MAX_CONCURRENTES $ESPERA
